@@ -68,7 +68,7 @@ export default function App() {
     <CartContextProvider>
       <WishContextProvider>
         <OrderContextProvider>
-            <RouterProvider router={routes}>
+            <RouterProvider router={routes} basename="/E-commerce-React">
               <Layout />
             </RouterProvider>
           </OrderContextProvider>
