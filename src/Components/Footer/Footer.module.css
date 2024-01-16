@@ -1,11 +1,11 @@
 .imageWidth{
 @media screen and (max-width:600px) {
     
-    width: 15%;
+    width: 20px;
 };
 @media screen and (min-width:600px) {
     
-    width: 10%;
+    width: 10px;
 };
 
 }
@@ -13,10 +13,10 @@
 .inputIdth{
     @media screen and (min-width:600px) {
     
-        width: 20%;
+        width: 85%;
     }; 
     @media screen and (max-width:600px) {
     
-        width: 10%;
+        width: 70%;
     }; 
 }
