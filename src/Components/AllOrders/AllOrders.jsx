@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { OrderContext } from '../../OrderContext';
 import { jwtDecode } from 'jwt-decode';
 import { useQuery } from 'react-query';
@@ -62,23 +62,7 @@ export default function AllOrders() {
             </div>
         </div>
 
-        {/* {item.cartItems.map((product , idx)=> <div key={idx} className='row border-bottom py-3'>
-            <div className='col-md-1'>
-                <img className='w-100' src={product.product.imageCover} alt='pic' />
-            </div>
-
-            <div className='col-md-11  pt-2'>
-                <div className='align-middle my-1'>
-                    {product.product.title.split(' ').slice(0,2).join(' ')}
-                    
-                </div>
-
-                <div>
-                    count:{product.count}
-                </div>
-
-            </div>
-        </div> )} */}
+        
         
       </div> )}  
     </div>  

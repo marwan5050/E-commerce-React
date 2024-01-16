@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-// import butIcon from '../Assets/Images/app-store-badge.svg';
 import butIcon from '../Assets/Images/app-store-badge.ico';
-// import butIcon2 from '../Assets/Images/google-play-badge.svg';
 import butIcon2 from '../Assets/Images/google-play-badge.ico';
 import toast from 'react-hot-toast';
 import style from './Footer.module.css';
