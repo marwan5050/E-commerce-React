@@ -1,11 +1,11 @@
-.imageWidth{
+/* .imageWidth{
 @media screen and (max-width:600px) {
     
-    width: 20px;
+    width: 20px !important;
 };
 @media screen and (min-width:600px) {
     
-    width: 10px;
+    width: 10px !important;
 };
 
 }
@@ -19,4 +19,26 @@
     
         width: 70%;
     }; 
+} */
+
+.imageWidth {
+    width: 10% !important;
+
+    @media screen and (max-width: 600px) {
+        width: 15% !important;
+    }
+
+    @media screen and (min-width: 600px) {
+        width: 10% !important;
+    }
+}
+
+.inputIdth {
+    @media screen and (min-width: 600px) {
+        width: 85%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 70%;
+    }
 }
