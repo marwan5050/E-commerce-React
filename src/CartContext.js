@@ -141,7 +141,7 @@ export default function CartContextProvider(props){
         getCartId();
         getCartNumItems();
         
-    },[])
+    },[getCartId])
 
 
     return <CartContext.Provider value={{loadSpinner , addToCart ,getCartId ,GetLoggedusercart ,cartId , removeItem , updatoCart , clearItems ,getCartNumItems ,numCartItems , setNumCartItems}}>

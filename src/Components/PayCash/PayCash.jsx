@@ -48,10 +48,11 @@ export default function PayCash() {
         onSubmit:handleCash
     })
 
-    
+
     useEffect(()=>{
-      getCartId()
-    },[])
+      getCartId();
+      getCartNumItems();
+    },[getCartId , getCartNumItems])
 
   return (
 <>

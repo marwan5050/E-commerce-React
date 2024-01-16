@@ -2,7 +2,7 @@ import axios from 'axios';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import { CartContext } from '../../CartContext';

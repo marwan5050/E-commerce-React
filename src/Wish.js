@@ -97,7 +97,7 @@ export default function WishContextProvider(props){
 
       useEffect(()=>{
         getNumitems();
-    },[])
+    },[getNumitems])
 
 
     return <WishContext.Provider value={{addToWishList , displayWishItems , removeWishItem , getNumitems , numItems}}>

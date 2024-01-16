@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import butIcon from '../Assets/Images/app-store-badge.svg';
-import butIcon2 from '../Assets/Images/google-play-badge.svg';
+// import butIcon from '../Assets/Images/app-store-badge.svg';
+import butIcon from '../Assets/Images/app-store-badge.ico';
+// import butIcon2 from '../Assets/Images/google-play-badge.svg';
+import butIcon2 from '../Assets/Images/google-play-badge.ico';
 import toast from 'react-hot-toast';
 import style from './Footer.module.css';
 import { BallTriangle } from  'react-loader-spinner';
@@ -85,7 +87,7 @@ export default function Footer() {
         <div className='rightside   '>
          <div className='fs-4 d-flex justify-content-sm-start   justify-content-md-end align-items-center text-capitalize fst-italic'> get deliveries with fresh cart
             <img src={butIcon} className={`mx-2 ${style.imageWidth}`}  alt='applestore'/>
-            <img src={butIcon2} className={`me-1 ${style.imageWidth}`} width={`10%`} alt='googlestore'/>
+            <img src={butIcon2} className={`me-1 ${style.imageWidth}`}  alt='googlestore'/>
           </div>
         </div>
 
