@@ -9,7 +9,7 @@ import Cart from '../Cart/Cart';
 import Payinfo from '../Payinfo/Payinfo';
 
 
-import {RouterProvider, createBrowserRouter} from 'react-router-dom';
+import {RouterProvider, createBrowserRouter, createHashRouter} from 'react-router-dom';
 import { userContext } from '../../UserContext';
 import ProtectedRoutes from '../ProtectedRoutes/ProtectedRoutes';
 import ProductDetails from '../ProductDetails/ProductDetails';
@@ -42,7 +42,7 @@ export default function App() {
   },[])
 
 
-  const routes = createBrowserRouter([
+  const routes = createHashRouter([
     {path:'/' , element:<Layout/>, children:[
 
       {index:true, element:<ProtectedRoutes> <Home/> </ProtectedRoutes>},
