@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3da53f24.css",
-    "main.js": "./static/js/main.062cc237.js",
+    "main.js": "./static/js/main.9519ad7e.js",
     "static/media/banner-4.jpeg": "./static/media/banner-4.3abc5952e7e65dbdd60f.jpeg",
     "static/media/fa-solid-900.ttf": "./static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/slider-image-1.jpeg": "./static/media/slider-image-1.3c3940ee0f1c3b17ff9a.jpeg",
@@ -15,10 +15,10 @@
     "static/media/error.svg": "./static/media/error.084f5f5b0eb10d3216cb7c939108e1f6.svg",
     "static/media/fa-regular-400.ttf": "./static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
     "static/media/fa-regular-400.woff2": "./static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
-    "static/media/google-play-badge.svg": "./static/media/google-play-badge.547ed9516509db9a3d347be73ee4d555.svg",
     "static/media/freshcart-logo.svg": "./static/media/freshcart-logo.53f7a424c3aedc30a0fb46dc2278137c.svg",
     "static/media/fa-v4compatibility.ttf": "./static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
-    "static/media/app-store-badge.svg": "./static/media/app-store-badge.26c6a64d6e30dd0438e9e0ff936390fe.svg",
+    "static/media/google-play-badge.ico": "./static/media/google-play-badge.c226ca22956695728d93.ico",
+    "static/media/app-store-badge.ico": "./static/media/app-store-badge.9b1ea617ce956ec14096.ico",
     "static/media/fa-v4compatibility.woff2": "./static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -26,10 +26,10 @@
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "index.html": "./index.html",
     "main.3da53f24.css.map": "./static/css/main.3da53f24.css.map",
-    "main.062cc237.js.map": "./static/js/main.062cc237.js.map"
+    "main.9519ad7e.js.map": "./static/js/main.9519ad7e.js.map"
   },
   "entrypoints": [
     "static/css/main.3da53f24.css",
-    "static/js/main.062cc237.js"
+    "static/js/main.9519ad7e.js"
   ]
 }
