@@ -1,0 +1,32 @@
+
+
+
+.zoom{
+    transition: all .5s;
+}
+
+.zoom:hover{
+    /* width: 100%; */
+    transform: scale(1.1);
+}
+
+.wish{
+    background-color: #fff;
+    transition: all .3s;
+  }
+  
+.wish:hover {
+   
+    color: #caca35 !important;
+  }
+
+.cart{
+    background-color:#fff;
+    transition: all .3s;
+
+}  
+
+.cart:hover{
+  color: red !important;
+}
+

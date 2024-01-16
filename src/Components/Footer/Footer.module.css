@@ -1,0 +1,22 @@
+.imageWidth{
+@media screen and (max-width:600px) {
+    
+    width: 15%;
+};
+@media screen and (min-width:600px) {
+    
+    width: 10%;
+};
+
+}
+
+.inputIdth{
+    @media screen and (min-width:600px) {
+    
+        width: 85%;
+    }; 
+    @media screen and (max-width:600px) {
+    
+        width: 70%;
+    }; 
+}

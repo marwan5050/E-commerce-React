@@ -1,0 +1,32 @@
+.normal {
+    font-size: 25px;
+    transition: all .4s;
+    color: #BADA55;
+  }
+
+  .normal:hover{
+    color: #fff;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #BADA55;
+    border-radius: 100%;
+    transition: all .4s;
+  }
+
+  .circle:hover{
+    background-color: #BADA55;
+    color: #fff;
+  }
+  
+
+  .hov{
+    transition: all .4s;
+  }
+  
+  .hov:hover{
+    background-color: #BADA55;
+    color: #fff;
+  }

@@ -1,0 +1,10 @@
+.x{
+    width: 100%;
+    transition: all .5s;
+}
+
+.x:hover{
+   
+    transform: scale(1.1);
+}
+

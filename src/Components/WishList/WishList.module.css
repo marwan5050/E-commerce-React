@@ -1,0 +1,11 @@
+.x{
+    letter-spacing: 2px;
+    color: #0d63fd !important;
+    font-weight: 500;
+} 
+
+.x:hover{
+   
+    color:#0aad0a !important;
+    transition: all .5s !important;
+}
