@@ -21,9 +21,6 @@ export default function PayCash() {
     setIsLoading(true);
      const {data} = await cashPayment(cartId, values);
   
-
-
-     console.log(data)
      if(data?.status === 'success'){
       setIsLoading(false);
        getCartNumItems();

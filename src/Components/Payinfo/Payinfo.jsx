@@ -1,5 +1,5 @@
 import {  useFormik } from 'formik';
-import React, {useState, useContext } from 'react';
+import React, {useState, useContext, useEffect } from 'react';
 import { OrderContext } from '../../OrderContext';
 import { CartContext } from '../../CartContext';
 import { BallTriangle } from  'react-loader-spinner';
@@ -9,9 +9,9 @@ import { BallTriangle } from  'react-loader-spinner';
 export default function Payinfo() {
 
     const {onlinePayment} = useContext(OrderContext);
-    const {cartId , getCartNumItems} = useContext(CartContext);
+    const { cartId , getCartNumItems} = useContext(CartContext);
     const [isLoading , setIsLoading] = useState(false);
-
+    
   async  function handleSubmit(values){
     setIsLoading(true);
      const response = await onlinePayment(cartId, 'https://marwan5050.github.io/E-commerce-React/#' , values)
@@ -20,7 +20,7 @@ export default function Payinfo() {
       setIsLoading(false);
      })
      getCartNumItems();
-      
+     
     // we use this becouse the direction is outside project so we had to use location,href 
      window.location.href = response?.data.session.url;
     
@@ -35,6 +35,7 @@ export default function Payinfo() {
         },
         onSubmit:handleSubmit
     })
+
 
   return (
 <>

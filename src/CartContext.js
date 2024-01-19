@@ -134,6 +134,7 @@ export default function CartContextProvider(props){
     const {data} =  await GetLoggedusercart()
     
         setCartId(data?.data?._id);
+        
     }
 
     useEffect(()=>{
