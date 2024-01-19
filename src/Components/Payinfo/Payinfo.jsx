@@ -22,11 +22,9 @@ export default function Payinfo() {
      getCartNumItems();
      
     // we use this becouse the direction is outside project so we had to use location,href 
-     window.location.href = response?.data.session.url;
+     window.location.href = response?.data.session.url + '?return_url=https://marwan5050.github.io/E-commerce-React/#/allorders';
 
-     if (!response?.data.session.url.includes('#')) {
-      window.location.href += '/#/allorders';
-    }
+    
     
     }
 
