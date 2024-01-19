@@ -9,7 +9,7 @@ export const OrderContext = createContext();
 // this function to get the link of stripe gate to pay money
 function onlinePayment(cartId , url , values){
 
-    return axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=${url}/#`,
+    return axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=${url}`,
     {shippingAddress:values},
     {
         headers:{

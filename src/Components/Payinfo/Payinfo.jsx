@@ -24,7 +24,9 @@ export default function Payinfo() {
     // we use this becouse the direction is outside project so we had to use location,href 
      window.location.href = response?.data.session.url;
 
-     
+     if (!response?.data.session.url.includes('#')) {
+      window.location.href += '/#/allorders';
+    }
     
     }
 
