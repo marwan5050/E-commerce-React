@@ -42,7 +42,7 @@ export default function App() {
   },[])
 
 
-  const routes = createBrowserRouter([
+  const routes = createHashRouter([
     {path:'/' , element:<Layout/>, children:[
 
       {index:true, element:<ProtectedRoutes> <Home/> </ProtectedRoutes>},
