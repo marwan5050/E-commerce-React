@@ -15,7 +15,7 @@ export default function Payinfo() {
   async  function handleSubmit(values){
     setIsLoading(true);
      const response = await onlinePayment(cartId, 'https://marwan5050.github.io/E-commerce-React' , values)
-     console.log(response)
+     
      .catch(()=>{
       setIsLoading(false);
      })
