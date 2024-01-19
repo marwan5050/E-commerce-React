@@ -78,17 +78,17 @@ export default function Navbar() {
 
         <ul className="navbar-nav ms-auto mt-2  mt-lg-0">
           
-          <li className="nav-item d-flex justify-content-sm-start justify-content-md-center align-items-center">
+         
+          {userToken !== null ? <>
+           
+
+            <li className="nav-item d-flex justify-content-sm-start justify-content-md-center align-items-center">
             <i className='fab fa-facebook pe-2 text-primary cursor-pointer' ></i>
             <i className='fab fa-instagram px-2 text-danger cursor-pointer' ></i>
             <i className='fab fa-twitter px-2 text-primary cursor-pointer' ></i>
             <i className='fab fa-youtube px-2 text-danger cursor-pointer' ></i>
             <i className='fab fa-tiktok px-2 cursor-pointer' ></i>
           </li>
-          {userToken !== null ? <>
-           
-
-          
 
         <li className="nav-item dropdown  ">
       <div className="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -14,7 +14,7 @@ export default function Payinfo() {
 
   async  function handleSubmit(values){
     setIsLoading(true);
-     const response = await onlinePayment(cartId, 'https://marwan5050.github.io/E-commerce-React/' , values)
+     const response = await onlinePayment(cartId, 'https://marwan5050.github.io/E-commerce-React/#/' , values)
      .catch(()=>{
       setIsLoading(false);
      })
@@ -53,7 +53,7 @@ export default function Payinfo() {
 
         <div>
             <label htmlFor='city'>City :</label>
-            <input type='tel' className='form-control my-1' name='city' id='city' 
+            <input type='text' className='form-control my-1' name='city' id='city' 
            onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.city}/>
         </div>
 

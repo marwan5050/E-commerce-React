@@ -103,9 +103,9 @@ export default function Cart() {
         </div>
 
       </div>)}
-<div className='d-flex align-items-center justify-content-between'>
+<div className='d-sm-block d-md-flex align-items-center justify-content-between py-1'>
 
-<div className='pay '>
+<div className='pay py-1'>
   <Link to='/payinfo' className='btn btn-success text-white text-capitalize fst-italic'>pay online</Link>
   <Link to='/paycash' className='btn btn-primary text-white text-capitalize fst-italic mx-2'>cash on delivery</Link>
 </div>
