@@ -7,16 +7,19 @@ import { createContext } from "react";
 export const OrderContext = createContext();
 
 // this function to get the link of stripe gate to pay money
-function onlinePayment(cartId , url , values){
+function onlinePayment(cartId ,  values){
 
-    return axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=${url}`,
-    {shippingAddress:values},
-    {
-        headers:{
-            token:localStorage.getItem('userToken')
-        }
-    }).then((response)=> response).catch((error)=> error) 
-    }
+return axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}`,
+{shippingAddress:values},
+{
+    headers:{
+        token:localStorage.getItem('userToken')
+    },
+
+    params:{url:'https://marwan5050.github.io/E-commerce-React/#'}
+    
+}).then((response)=> response).catch((error)=> error) 
+}
 
 function cashPayment(cartId , values){
 

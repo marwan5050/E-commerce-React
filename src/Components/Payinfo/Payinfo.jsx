@@ -12,21 +12,19 @@ export default function Payinfo() {
     const { cartId , getCartNumItems} = useContext(CartContext);
     const [isLoading , setIsLoading] = useState(false);
     
-  async  function handleSubmit(values){
-    setIsLoading(true);
-     const response = await onlinePayment(cartId, 'https://marwan5050.github.io/E-commerce-React/#/' , values)
-     
-     .catch(()=>{
-      setIsLoading(false);
-     })
-     getCartNumItems();
-     
-    // we use this becouse the direction is outside project so we had to use location,href 
-     window.location.href = response?.data.session.url ;
+async  function handleSubmit(values){
+setIsLoading(true);
+  const response = await onlinePayment(cartId,  values)
+  
+  .catch(()=>{
+  setIsLoading(false);
+  })
+  getCartNumItems();
+  
+// we use this becouse the direction is outside project so we had to use location,href 
+  window.location.href = response?.data.session.url ;
 
-    
-    
-    }
+  }
 
 
     const formik = useFormik({
