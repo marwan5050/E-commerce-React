@@ -23,6 +23,10 @@ export default function Payinfo() {
      
     // we use this becouse the direction is outside project so we had to use location,href 
      window.location.href = response?.data.session.url;
+
+     if(response?.data.status === 'success'){
+      window.location.href = `https://marwan5050.github.io/E-commerce-React`
+     }
     
     }
 

@@ -9,7 +9,7 @@ import Cart from '../Cart/Cart';
 import Payinfo from '../Payinfo/Payinfo';
 
 
-import {RouterProvider, createBrowserRouter, createHashRouter} from 'react-router-dom';
+import {RouterProvider,  createHashRouter} from 'react-router-dom';
 import { userContext } from '../../UserContext';
 import ProtectedRoutes from '../ProtectedRoutes/ProtectedRoutes';
 import ProductDetails from '../ProductDetails/ProductDetails';
@@ -68,7 +68,7 @@ export default function App() {
     <CartContextProvider>
       <WishContextProvider>
         <OrderContextProvider>
-            <RouterProvider router={routes} basename="/E-commerce-React">
+            <RouterProvider router={routes} basename="/E-commerce-React/">
               <Layout />
             </RouterProvider>
           </OrderContextProvider>
