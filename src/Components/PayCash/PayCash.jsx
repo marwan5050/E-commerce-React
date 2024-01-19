@@ -27,11 +27,11 @@ export default function PayCash() {
      if(data?.status === 'success'){
       setIsLoading(false);
        getCartNumItems();
-      console.log('done');
+      
       toast.success('order shiped successfully');
       navigate('/allorders');
      } else{
-      console.log('no');
+      
       setIsLoading(false);
       toast.error('error order');
      }

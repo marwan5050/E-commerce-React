@@ -42,7 +42,7 @@ export default function App() {
   },[])
 
 
-  const routes = createHashRouter([
+  const routes = createBrowserRouter([
     {path:'/' , element:<Layout/>, children:[
 
       {index:true, element:<ProtectedRoutes> <Home/> </ProtectedRoutes>},
@@ -68,7 +68,7 @@ export default function App() {
     <CartContextProvider>
       <WishContextProvider>
         <OrderContextProvider>
-            <RouterProvider router={routes} >
+            <RouterProvider router={routes} basename="/E-commerce-React">
               <Layout />
             </RouterProvider>
           </OrderContextProvider>
