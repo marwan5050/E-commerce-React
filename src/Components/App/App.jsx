@@ -46,19 +46,19 @@ export default function App() {
     {path:'/' , element:<Layout/>, children:[
 
       {index:true, element:<ProtectedRoutes> <Home/> </ProtectedRoutes>},
-      {path:'/categories', element: <ProtectedRoutes> <Categories/> </ProtectedRoutes>},
-      {path:'/specificgate/:id', element: <ProtectedRoutes> <SpecificGate/> </ProtectedRoutes>},
-      {path:'/products', element: <ProtectedRoutes> <Products/> </ProtectedRoutes>},
-      {path:'/productdetails/:id', element: <ProtectedRoutes> <ProductDetails/> </ProtectedRoutes>},
-      {path:'/cart', element: <ProtectedRoutes> <Cart/> </ProtectedRoutes>},
-      {path:'/wishlist', element: <ProtectedRoutes> <WishList/> </ProtectedRoutes>},
-      {path:'/Payinfo', element: <ProtectedRoutes> <Payinfo/> </ProtectedRoutes>},
-      {path:'/Paycash', element: <ProtectedRoutes> <PayCash/> </ProtectedRoutes>},
-      {path:'/allorders', element: <ProtectedRoutes> <AllOrders/> </ProtectedRoutes>}, 
+      {path:'categories', element: <ProtectedRoutes> <Categories/> </ProtectedRoutes>},
+      {path:'specificgate/:id', element: <ProtectedRoutes> <SpecificGate/> </ProtectedRoutes>},
+      {path:'products', element: <ProtectedRoutes> <Products/> </ProtectedRoutes>},
+      {path:'productdetails/:id', element: <ProtectedRoutes> <ProductDetails/> </ProtectedRoutes>},
+      {path:'cart', element: <ProtectedRoutes> <Cart/> </ProtectedRoutes>},
+      {path:'wishlist', element: <ProtectedRoutes> <WishList/> </ProtectedRoutes>},
+      {path:'Payinfo', element: <ProtectedRoutes> <Payinfo/> </ProtectedRoutes>},
+      {path:'Paycash', element: <ProtectedRoutes> <PayCash/> </ProtectedRoutes>},
+      {path:'allorders', element: <ProtectedRoutes> <AllOrders/> </ProtectedRoutes>}, 
       {path:'*', element: <ProtectedRoutes> <Notfound/> </ProtectedRoutes>}, 
          
-      {path:'/login', element:<Login/>},
-      {path:'/register', element:<Register/>},
+      {path:'login', element:<Login/>},
+      {path:'register', element:<Register/>},
     ]}
   ])
 

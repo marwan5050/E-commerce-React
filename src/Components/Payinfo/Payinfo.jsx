@@ -14,12 +14,13 @@ export default function Payinfo() {
 
   async  function handleSubmit(values){
     setIsLoading(true);
-     const response = await onlinePayment(cartId, 'https://marwan5050.github.io/E-commerce-React/#' , values)
+     const response = await onlinePayment(cartId, 'https://marwan5050.github.io/E-commerce-React' , values)
+     console.log(response)
      .catch(()=>{
       setIsLoading(false);
      })
      getCartNumItems();
-      console.log(response.data)
+      
     // we use this becouse the direction is outside project so we had to use location,href 
      window.location.href = response?.data.session.url;
     
