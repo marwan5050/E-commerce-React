@@ -48,11 +48,13 @@ export default function Footer() {
               <div className={ `text-muted text-capitalize fs-6 py-2 lh-lg ${FooterStyle.headText}`}>we will send you a link open it to download the app</div>
             </div>
 
-          <div className='d-flex justify-content-between  border-bottom py-4'>
-              <input type='email' id='emailInput'name='from_name' className={`form-control ${FooterStyle.inputIdth}`}
+          <div className={`row d-flex justify-content-between  border-bottom py-4 `}>
+              <div className='col-8 col-md-10' >
+              <input type='email' id='emailInput' name='from_name' className={` form-control`}
               placeholder='Email...' 
               value={userEmail}
                 onChange={(e) => setUserEmail(e.target.value)}/>
+              </div>
                 {isLoading ? <>
                   <button className='btn' >
                   <BallTriangle
@@ -67,7 +69,9 @@ export default function Footer() {
                   />
               </button>
                 </>: <>
+                <div className={`col-4 col-md-2`}>
               <button onClick={sendEmail} className='btn btn-success text-white text-capitalize'>share app link</button>
+              </div>
               </>}
           </div>
 
@@ -83,12 +87,12 @@ export default function Footer() {
               </div>
             
               
-                <div className='rightside d-flex  justify-content-sm-between  justify-content-md-end align-items-center  ' >
-                    <div className='d-flex justify-content-sm-start justify-content-md-end ' style={{width:`60%`}}>
+                <div className='rightside  row d-flex  justify-content-sm-between  justify-content-md-end align-items-center  ' >
+                    <div className='col-8 col-md-9  d-flex justify-content-sm-start justify-content-md-end ' >
                       <div className='fs-5 fs-md-4 text-capitalize fst-italic'>get deliveries with fresh cart</div>
                     </div>
 
-                    <div className={`   d-flex justify-content-sm-between justify-content-md-around ${FooterStyle.icons}`} >
+                    <div className={` col-4 col-md-3  d-flex justify-content-sm-between justify-content-md-around  `}  >
                       <img src={butIcon} className={`  ${FooterStyle.imageWidth}`}  alt='applestore'/>
                       <img src={butIcon2} className={` ${FooterStyle.imageWidth}`}   alt='googlestore'/>
                     </div>

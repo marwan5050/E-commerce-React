@@ -3,26 +3,48 @@
     
       font-size: 18px !important;
     };
-}
+};
+
+
+
+/* .inputIdth{
+    @media screen and (min-width:516px) {
+    
+        width: 85% !important;
+    }; 
+    @media screen and (max-width:516px) {
+    
+        width: 60% !important;
+    }; 
+}; */
+
+/* .butwidth{
+    @media screen and (min-width:516px) {
+    
+        width: 12% !important;
+    }; 
+    @media screen and (max-width:516px) {
+    
+        width: 30% !important;
+    }; 
+} */
 
 .icons{
     @media screen and (max-width:516px) {
     
-        width: 40% !important;
+        width: 50% !important;
        
     };
 
     @media screen and (min-width:516px) {
     
-        width: 30% !important;
+        width: 10% !important;
         
     };
 
 }
 
 .imageWidth{
-
-    
 @media screen and (max-width:516px) {
     
     width: 45% !important;
@@ -30,19 +52,9 @@
 };
 @media screen and (min-width:516px) {
     
-    width: 10% !important;
+    width: 40% !important;
     margin-right: 10px;
 };
 
-}
+};
 
-.inputIdth{
-    @media screen and (min-width:516px) {
-    
-        width: 85%;
-    }; 
-    @media screen and (max-width:516px) {
-    
-        width: 60%;
-    }; 
-}
