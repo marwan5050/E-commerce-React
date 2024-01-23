@@ -11,12 +11,12 @@
 
 @media screen and (max-width:516px) {
     
-    width: 50% !important;
+    width: 50px !important;
     margin-right: 10px;
 };
 @media screen and (min-width:516px) {
     
-    width: 40% !important;
+    width: 40px !important;
     margin-right: 10px;
 };
 
