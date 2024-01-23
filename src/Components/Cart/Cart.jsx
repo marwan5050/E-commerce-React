@@ -16,7 +16,6 @@ export default function Cart() {
 
   const {isLoading , data , refetch , isError} = useQuery(`getItems` , GetLoggedusercart);
 
-  console.log(data?.data)
   // this line to handle undefiend error after clear cart items and if data is undefiend set products to empty array
   const products = data?.data?.data?.products || [];
   
@@ -66,14 +65,14 @@ export default function Cart() {
               </div>
 
               <div>
-                {/* i called refeth form react-query using third param in func which is onSuccessCallback in context */}
+                
                 
                 <button onClick={() => {
                   
                   updatoCart(item.product.id, item.count + 1, () => {
                     
-                    // Perform re-fetch or any other necessary actions upon successful update
-                    refetch(); // Assuming refetch is a function to fetch cart items again
+                    
+                    refetch(); 
 
                   });
                 }} className='btn bdr'>+</button>
@@ -84,8 +83,8 @@ export default function Cart() {
                 <span className='mx-2'>{item.count}</span>
                 <button onClick={() => {
                   updatoCart(item.product.id, item.count - 1, () => {
-                    // Perform re-fetch or any other necessary actions upon successful update
-                    refetch(); // Assuming refetch is a function to fetch cart items again
+                    
+                    refetch(); 
                   });
                 }} className='btn bdr' disabled={item.count === 1}>-</button>
                 

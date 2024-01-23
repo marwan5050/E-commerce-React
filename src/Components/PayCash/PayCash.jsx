@@ -5,6 +5,7 @@ import { CartContext } from '../../CartContext';
 import toast from 'react-hot-toast';
 import {   useNavigate } from 'react-router-dom';
 import { BallTriangle } from  'react-loader-spinner';
+import * as Yup from 'yup'; 
 
 
 
@@ -36,12 +37,21 @@ export default function PayCash() {
      }
 
 
+     const validationSchema = Yup.object({
+      address:Yup.string().min(10,'address must grater than 10 chars').max(25,'address must less than or equal 25 chars').required('address is required'),
+      phone:Yup.string().required('mobile is required'),
+      city:Yup.string().min(2,'ciy must grater than 2 chars').max(15,'city must less than or equal 15 chars').required('city is required'),
+      
+    })
+
+
     const formik = useFormik({
         initialValues:{
             'address':'',
             'phone':'',
             'city':''
         },
+        validationSchema:validationSchema,
         onSubmit:handleCash
     })
 
@@ -88,7 +98,7 @@ export default function PayCash() {
               />
           </button>
           </>: <>
-            <button  type='submit' className='btn btn-success text-white text-capitalize'>pay on delivery</button>
+            <button disabled={!(formik.isValid && formik.dirty)} type='submit' className='btn btn-success text-white text-capitalize'>pay on delivery</button>
             </>
           }  
         </div>

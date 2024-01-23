@@ -3,7 +3,7 @@ import React, {useState, useContext, useEffect } from 'react';
 import { OrderContext } from '../../OrderContext';
 import { CartContext } from '../../CartContext';
 import { BallTriangle } from  'react-loader-spinner';
-
+import * as Yup from 'yup'; 
 
 
 export default function Payinfo() {
@@ -26,6 +26,13 @@ setIsLoading(true);
 
   }
 
+  const validationSchema = Yup.object({
+    address:Yup.string().min(10,'address must grater than 10 chars').max(25,'address must less than or equal 25 chars').required('address is required'),
+    phone:Yup.string().required('mobile is required'),
+    city:Yup.string().min(2,'ciy must grater than 2 chars').max(15,'city must less than or equal 15 chars').required('city is required'),
+    
+  })
+
 
     const formik = useFormik({
         initialValues:{
@@ -33,6 +40,7 @@ setIsLoading(true);
             'phone':'',
             'city':''
         },
+        validationSchema:validationSchema,
         onSubmit:handleSubmit
     })
 
@@ -74,7 +82,7 @@ setIsLoading(true);
               />
           </button>
           </> :<>
-            <button type='submit' className='btn btn-success text-white text-capitalize'>pay now</button>
+            <button disabled={!(formik.isValid && formik.dirty)} type='submit' className='btn btn-success text-white text-capitalize'>pay now</button>
             </>
           }
         </div>

@@ -84,7 +84,7 @@ export default function Footer() {
       {/* <div className='fs-6 fs-md-4 d-flex justify-content-sm-between   justify-content-md-end align-items-center text-capitalize fst-italic'>
           get deliveries with fresh cart
           </div> */}
-        <div className=' d-flex justify-content-end  text-capitalize fst-italic  '>
+        <div className=' d-flex justify-content-end  text-capitalize fst-italic '>
         
           <div className='  d-flex justify-content-sm-start justify-content-md-end align-items-center' style={{width:`70%`}}>
             <div className='fs-5 fs-md-4'>get deliveries with fresh cart</div>
