@@ -5,18 +5,32 @@
     };
 }
 
+.icons{
+    @media screen and (max-width:516px) {
+    
+        width: 40% !important;
+       
+    };
+
+    @media screen and (min-width:516px) {
+    
+        width: 30% !important;
+        
+    };
+
+}
+
 .imageWidth{
 
     
-
 @media screen and (max-width:516px) {
     
-    width: 50px !important;
+    width: 45% !important;
     margin-right: 10px;
 };
 @media screen and (min-width:516px) {
     
-    width: 40px !important;
+    width: 40% !important;
     margin-right: 10px;
 };
 
