@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 import butIcon from '../Assets/Images/app-store-badge.ico';
 import butIcon2 from '../Assets/Images/google-play-badge.ico';
 import toast from 'react-hot-toast';
-import style from './Footer.module.css';
+import FooterStyle from './Footer.module.css';
 import { BallTriangle } from  'react-loader-spinner';
 
 
@@ -45,11 +45,11 @@ export default function Footer() {
       <div className='container'>
       <div className='head'>
         <h3 className='text-capitalize mb-2'>get the freshCart app</h3>
-        <div className={ `text-muted text-capitalize fs-6 py-2 lh-lg ${style.headText}`}>we will send you a link open it to download the app</div>
+        <div className={ `text-muted text-capitalize fs-6 py-2 lh-lg ${FooterStyle.headText}`}>we will send you a link open it to download the app</div>
       </div>
 
       <div className='d-flex justify-content-between  border-bottom py-4'>
-          <input type='email' id='emailInput'name='from_name' className={`form-control ${style.inputIdth}`}
+          <input type='email' id='emailInput'name='from_name' className={`form-control ${FooterStyle.inputIdth}`}
           placeholder='Email...' 
           value={userEmail}
             onChange={(e) => setUserEmail(e.target.value)}/>
@@ -81,17 +81,15 @@ export default function Footer() {
           <i className="fa-brands fa-paypal fa-xl mx-2 text-primary"></i>
         </div>
         </div>
-      {/* <div className='fs-6 fs-md-4 d-flex justify-content-sm-between   justify-content-md-end align-items-center text-capitalize fst-italic'>
-          get deliveries with fresh cart
-          </div> */}
+      
         <div className=' d-flex justify-content-end  text-capitalize fst-italic '>
         
           <div className='  d-flex justify-content-sm-start justify-content-md-end align-items-center' style={{width:`70%`}}>
             <div className='fs-5 fs-md-4'>get deliveries with fresh cart</div>
           </div>
           <div className='  d-flex justify-content-sm-between justify-content-md-around' style={{width:`30%`}}>
-            <img src={butIcon} className={` ${style.imageWidth}`}  alt='applestore'/>
-            <img src={butIcon2} className={` ${style.imageWidth}`}  alt='googlestore'/>
+            <img src={butIcon} className={` ${FooterStyle.imageWidth}`}  alt='applestore'/>
+            <img src={butIcon2} className={` ${FooterStyle.imageWidth}`}  alt='googlestore'/>
           </div>
         </div>
 

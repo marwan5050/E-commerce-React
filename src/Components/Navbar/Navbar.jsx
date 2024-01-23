@@ -50,9 +50,9 @@ export default function Navbar() {
             <Link className="nav-link " to="/cart"><i className="fa-solid fa-cart-shopping text-success my-1" style={{fontSize:"22px"}}></i>
             
               <span className="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger mt-3 mt-md-0">
-                {numCartItems !== 0 && ( // Check if numCartItems is not zero
+                {numCartItems !== 0 && ( 
                   <>
-                    {numCartItems} {/* Display the count if numCartItems is not zero */}
+                    {numCartItems} 
                     <span className="visually-hidden">unread messages</span>
                   </>
                 )}
@@ -91,7 +91,7 @@ export default function Navbar() {
             <i className='fab fa-tiktok px-2 cursor-pointer' ></i>
           </li>
 
-        <li className="nav-item dropdown  ">
+        <li className="nav-item dropdown  mt-2 mt-lg-0">
       <div className="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <div className={` d-flex align-items-center justify-content-center ${style.circle}  `}>
           <span className={`text-capitalize ${style.normal} `}> {userName.charAt(0)} </span>
