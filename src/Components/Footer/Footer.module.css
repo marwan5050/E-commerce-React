@@ -7,7 +7,7 @@
 
 .imageWidth{
 
-    width: 10% !important;
+    
 
 @media screen and (max-width:516px) {
     
@@ -16,7 +16,8 @@
 };
 @media screen and (min-width:516px) {
     
-    width: 10% !important;
+    width: 20% !important;
+    margin-right: 10px;
 };
 
 }
