@@ -36,7 +36,7 @@ export default function WishContextProvider(props){
             const itemCount = response?.data?.count || 0;
 
             setNumItems(itemCount)
-            console.log(itemCount);
+            
         } catch (error) {
             console.error("Error fetching wish cart items count:", error);
         }
@@ -58,7 +58,7 @@ export default function WishContextProvider(props){
           );
     
           if (response.data.status === 'success') {
-            // After successfully adding items, update the cart count
+            
             await getNumitems();
             if (onSuccessCallback) {
               onSuccessCallback();
@@ -87,7 +87,7 @@ export default function WishContextProvider(props){
                     onSuccessCallback();
                 }
             }
-            return response; // Make sure to return the response here
+            return response; 
         } catch (error) {
             console.error("Error removing product:", error);
             

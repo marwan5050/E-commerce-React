@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React from 'react';
+import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import style from './categories.module.css';
@@ -7,22 +7,26 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import {Helmet} from "react-helmet";
+import {BallTriangle} from 'react-loader-spinner';
 
 
 export default function SpecificGate() {
 
     const params = useParams();
+   const [isLoading , setIsLoading] =  useState(false)
 
     function getSpecificGategorey(id){
    
-        return axios.get(`https://ecommerce.routemisr.com/api/v1/categories/${id}`);
+        return axios.get(`https://ecommerce.routemisr.com/api/v1/categories/${id}`)
+        .then((response)=>response).catch((error)=> console.error(error));
     
        }
 
 
        function getSubCategories(id){
 
-        return axios.get(`https://route-ecommerce.onrender.com/api/v1/categories/${id}/subcategories`);
+        return axios.get(`https://route-ecommerce.onrender.com/api/v1/categories/${id}/subcategories`)
+        .then((response)=>response).catch((error)=> console.error(error));
        }
 
 
@@ -30,7 +34,6 @@ export default function SpecificGate() {
       const {data: specifcGate} = useQuery('specificgateRequest' , ()=> getSpecificGategorey(params.id)); 
       const {data: subGate} = useQuery('subgateRequest' , ()=> getSubCategories(params.id)); 
 
-console.log(specifcGate?.data.data.name)
 
       const settings = {
         dots: true,
@@ -52,6 +55,20 @@ console.log(specifcGate?.data.data.name)
     </Helmet>
 
    <div className='container  py-5'>
+    {isLoading ? (<>
+        <div className='vh-100 d-flex justify-content-center align-items-center'>
+        <BallTriangle
+          height={100}
+          width={100}
+          radius={5}
+          color='#4fa94d'
+          ariaLabel='ball-triangle-loading'
+          wrapperClass={{}}
+          wrapperStyle=''
+          visible={true}
+        />
+      </div>
+    </>) :(<>
         <div className='w-50  mt-2 mb-5'>
             
             <div className=' border p-2  text-center'>
@@ -71,6 +88,8 @@ console.log(specifcGate?.data.data.name)
             </div> )}
        </Slider>
         </div>
+
+        </>)}
     </div>        
            
    </>

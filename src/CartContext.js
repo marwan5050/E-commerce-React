@@ -26,15 +26,40 @@ export default function CartContextProvider(props){
         })
         .then((response)=> response).catch((error)=> error)
     }  
+
+
+    
+
+
+
+
     
    
         // get number of items in cart
+        // async function getCartNumItems() {
+        //     try {
+        //         const response = await GetLoggedusercart();
+                
+        //         const itemCount = response?.data?.numOfCartItems || 0;
+        //         setNumCartItems(itemCount);
+        //     } catch (error) {
+        //         console.error("Error fetching cart items count:", error);
+        //     }
+        // }
+
+
+
         async function getCartNumItems() {
             try {
                 const response = await GetLoggedusercart();
-                // Assuming response.data holds the cart information with item count
-                const itemCount = response?.data?.numOfCartItems || 0;
-                setNumCartItems(itemCount);
+                
+                if (response.status === 404) {
+                    console.warn("Cart is empty:", response);
+                    setNumCartItems(0); 
+                } else {
+                    const itemCount = response?.data?.numOfCartItems || 0;
+                    setNumCartItems(itemCount);
+                }
             } catch (error) {
                 console.error("Error fetching cart items count:", error);
             }
@@ -55,7 +80,7 @@ export default function CartContextProvider(props){
               );
         
               if (response.data.status === 'success') {
-                // After successfully adding items, update the cart count
+
                 await getCartNumItems();
                 
                 if (onSuccessCallback) {
@@ -70,7 +95,7 @@ export default function CartContextProvider(props){
           }
 
 
-// i used third param for call refetch to rerender component method from react-query
+ 
 
         //   increase or decrease product in cart
           function updatoCart(id , count , onSuccessCallback){
@@ -128,21 +153,31 @@ export default function CartContextProvider(props){
 
 
 
-
-   async function getCartId(){
-
-    const {data} =  await GetLoggedusercart()
+    async function getCartId() {
+        try {
+            const response = await GetLoggedusercart();
     
-        setCartId(data?.data?._id);
-        
+            
+            if (response?.data && response?.data?.data && response?.data?.data?._id) {
+                setCartId(response?.data?.data?._id);
+            } else {
+                
+                console.warn("Cart is empty:", response);
+            }
+        } catch (error) {
+            console.error("Error fetching cart ID:", error);
+        }
     }
+    
 
     useEffect(()=>{
 
-        getCartId();
+        if (numCartItems > 0) {
+            getCartId();
+        }
         getCartNumItems();
         
-    },[getCartId])
+    },[numCartItems  ])
 
 
     return <CartContext.Provider value={{loadSpinner , addToCart ,getCartId ,GetLoggedusercart ,cartId , removeItem , updatoCart , clearItems ,getCartNumItems ,numCartItems , setNumCartItems}}>

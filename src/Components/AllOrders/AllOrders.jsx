@@ -9,14 +9,13 @@ export default function AllOrders() {
     const {getUserOrder} = useContext(OrderContext);
 
 
-    // this line to get userid from token using jwt, and userid is object inside it the userid 
+    
     const userId = jwtDecode(localStorage.getItem('userToken'));
 
    const {data} =   useQuery(`orderRequest` , ()=> getUserOrder(userId.id),{
     refetchOnMount:true,
    });
 
-//    console.log(data?.data)
 
     
 

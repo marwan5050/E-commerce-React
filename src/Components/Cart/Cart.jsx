@@ -16,7 +16,7 @@ export default function Cart() {
 
   const {isLoading , data , refetch , isError} = useQuery(`getItems` , GetLoggedusercart);
 
-  // this line to handle undefiend error after clear cart items and if data is undefiend set products to empty array
+   
   const products = data?.data?.data?.products || [];
   
   
