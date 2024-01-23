@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import butIcon from '../Assets/Images/app-store-badge.ico';
-import butIcon2 from '../Assets/Images/google-play-badge.ico';
+import butIcon from '../Assets/Images/app-store-badge.svg';
+import butIcon2 from '../Assets/Images/google-play-badge.svg';
 import toast from 'react-hot-toast';
 import FooterStyle from './Footer.module.css';
 import { BallTriangle } from  'react-loader-spinner';
