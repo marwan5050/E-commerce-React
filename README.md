@@ -19,7 +19,7 @@ Welcome to the E-commerce React Project! This robust application represents a cu
 
 This project boasts a comprehensive feature set, including but not limited to:
 
- -- Authentication: Secure user registration, login, and logout functionalities ensure data privacy and integrity.
+ - - Authentication: Secure user registration, login, and logout functionalities ensure data privacy and integrity.
 - Protected Routes: Certain sections of the application are protected, accessible only to authenticated users, ensuring a secure environment.
 
 ### `npm run build`
