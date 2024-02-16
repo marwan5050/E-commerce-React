@@ -41,17 +41,13 @@ Moreover, this project leverages a diverse array of technologies and libraries, 
 
 
 
+# Usage
 
+- To use this project, follow the installation instructions mentioned above. After starting the development server, you can access the application in your browser.
+- Or you can access the project online, please visit [E-commerce React Project](https://marwan5050.github.io/E-commerce-React/) 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Note---> When testing online payments, please use the following test card number: 4242 4242 4242 4242. For the expiry date, any future date can be used. This is a Visa test card provided by 
+          Stripe for testing purposes.
 
 ## Learn More
 
