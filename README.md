@@ -3,8 +3,8 @@
 
 # Table of Contents
 
-1. Introduction
-2. Installation
+ # 1. Introduction
+# 2. Installation
 - Usage
 - Features
 - Dependencies
