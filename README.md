@@ -33,15 +33,15 @@ Moreover, this project leverages a diverse array of technologies and libraries, 
 
 
 
-### `npm run build`
+# Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository: `git clone https://github.com/marwan5050/E-commerce-React.git`
+2. Install dependencies: ` npm install`
+3. Start the development server: `npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
 
 ### `npm run eject`
 
