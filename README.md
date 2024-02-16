@@ -46,7 +46,8 @@ Moreover, this project leverages a diverse array of technologies and libraries, 
 - To use this project, follow the installation instructions mentioned above. After starting the development server, you can access the application in your browser.
 - Or you can access the project online, please visit [E-commerce React Project](https://marwan5050.github.io/E-commerce-React/) 
 
-- Note---> When testing online payments, please use the following test card number: 4242 4242 4242 4242. For the expiry date, any future date can be used. This is a Visa test card provided by Stripe for testing purposes.
+- Note---> When testing online payments, please use the following test card number: 4242 4242 4242 4242. For the expiry date, any future date can be used. This is a Visa test card provided 
+     by Stripe for testing purposes.
 
 # Features
 
@@ -80,7 +81,7 @@ Moreover, this project leverages a diverse array of technologies and libraries, 
 - API Requests Handling: Axios is employed for making HTTP requests to APIs.
 - Clean Code: The codebase adheres to best practices and is well-structured for readability and maintainability.
 
-.These features enrich the user experience by providing essential functionalities such as online payments, personalized profiles, and efficient management of shopping carts and wishlists.
+These features enrich the user experience by providing essential functionalities such as online payments, personalized profiles, and efficient management of shopping carts and wishlists.
 
 
 
@@ -103,22 +104,27 @@ Moreover, this project leverages a diverse array of technologies and libraries, 
 - React Slick
 
 
-### Analyzing the Bundle Size
+# Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React
+- Stripe
+- JavaScript
+- HTML/CSS
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Contributing
 
-### Advanced Configuration
+Contributions are welcome! Feel free to fork the repository and submit pull requests to contribute.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# License
 
-### Deployment
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Contact Information
 
-### `npm run build` fails to minify
+For any questions or inquiries, feel free to reach out to the project maintainer:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Name: Marwan Abdullah
+- Email: marwanabdalla471@yahoo.com  // marwanabdalla2015@gmail.com
+
+
