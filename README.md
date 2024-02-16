@@ -17,10 +17,21 @@
 
 Welcome to the E-commerce React Project! This robust application represents a culmination of meticulous development aimed at delivering a cutting-edge e-commerce experience. Crafted with precision and attention to detail, this project offers users a seamless platform to browse, purchase, and manage products online.
 
-- This project boasts a comprehensive feature set, including but not limited to:
+This project boasts a comprehensive feature set, including but not limited to:
 
- - Authentication: Secure user registration, login, and logout functionalities ensure data privacy and integrity.
+- Authentication: Secure user registration, login, and logout functionalities ensure data privacy and integrity.
 - Protected Routes: Certain sections of the application are protected, accessible only to authenticated users, ensuring a secure environment.
+- State-of-the-Art State Management: Leveraging the power of Context API, this project ensures efficient data flow and management.
+- API Integrations: Seamless integration with backend APIs facilitates smooth data retrieval and management.
+- Order Tracking: Users can effortlessly track their orders, providing transparency and enhancing trust.
+- SEO Optimization: By utilizing React Helmet, this project ensures optimal search engine visibility, enhancing its online presence.
+- Offline Detection: The application intelligently detects offline scenarios, providing users with seamless interaction regardless of connectivity.
+- Notification System: React Hot Toast is employed to deliver timely notifications, keeping users informed about crucial events.
+- Clean Code Architecture: The project adheres to industry best practices, boasting a clean and well-structured codebase for enhanced maintainability and scalability.
+
+Moreover, this project leverages a diverse array of technologies and libraries, including React, Stripe for secure online payments, and various other tools to deliver a seamless experience.
+
+
 
 ### `npm run build`
 
